@@ -10,12 +10,12 @@ import UIKit
 class ThirdViewController: UIViewController {
     
     required init?(coder: NSCoder) {
-        print("===> ThirdViewController init")
+        print("===> ThirdVC init")
         super.init(coder: coder)
     }
     
     deinit {
-        print("ThirdViewController deinit <===")
+        print("ThirdVC deinit <===")
     }
     
     override func viewDidLoad() {

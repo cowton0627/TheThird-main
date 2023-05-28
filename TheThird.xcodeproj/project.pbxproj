@@ -14,9 +14,10 @@
 		9122F0FF2747EA6A00325880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9122F0FE2747EA6A00325880 /* Assets.xcassets */; };
 		9122F1022747EA6A00325880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122F1002747EA6A00325880 /* LaunchScreen.storyboard */; };
 		9122F10A2747EAB700325880 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F1092747EAB700325880 /* SecondViewController.swift */; };
-		9122F10C2749FD4300325880 /* ChangeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F10B2749FD4300325880 /* ChangeScene.swift */; };
+		9122F10C2749FD4300325880 /* TransScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F10B2749FD4300325880 /* TransScene.swift */; };
 		9122F112274A110800325880 /* Sub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9122F111274A110800325880 /* Sub.storyboard */; };
 		9122F114274A111F00325880 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122F113274A111F00325880 /* ThirdViewController.swift */; };
+		9149C9682A22DDFC005CF920 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9149C9672A22DDFC005CF920 /* UIStoryboard+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		9122F1012747EA6A00325880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9122F1032747EA6A00325880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9122F1092747EAB700325880 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		9122F10B2749FD4300325880 /* ChangeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeScene.swift; sourceTree = "<group>"; };
+		9122F10B2749FD4300325880 /* TransScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransScene.swift; sourceTree = "<group>"; };
 		9122F111274A110800325880 /* Sub.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sub.storyboard; sourceTree = "<group>"; };
 		9122F113274A111F00325880 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		9149C9672A22DDFC005CF920 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +68,42 @@
 			children = (
 				9122F0F52747EA6600325880 /* AppDelegate.swift */,
 				9122F0F72747EA6600325880 /* SceneDelegate.swift */,
-				9122F10B2749FD4300325880 /* ChangeScene.swift */,
-				9122F0F92747EA6600325880 /* ViewController.swift */,
-				9122F1092747EAB700325880 /* SecondViewController.swift */,
-				9122F113274A111F00325880 /* ThirdViewController.swift */,
-				9122F0FB2747EA6600325880 /* Main.storyboard */,
-				9122F111274A110800325880 /* Sub.storyboard */,
+				9149C9662A22DA09005CF920 /* View */,
+				9149C9652A22D5F8005CF920 /* Controller */,
+				9149C9642A22D5ED005CF920 /* Helper */,
 				9122F0FE2747EA6A00325880 /* Assets.xcassets */,
 				9122F1002747EA6A00325880 /* LaunchScreen.storyboard */,
 				9122F1032747EA6A00325880 /* Info.plist */,
 			);
 			path = TheThird;
+			sourceTree = "<group>";
+		};
+		9149C9642A22D5ED005CF920 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9122F10B2749FD4300325880 /* TransScene.swift */,
+				9149C9672A22DDFC005CF920 /* UIStoryboard+Ext.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9149C9652A22D5F8005CF920 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9122F0F92747EA6600325880 /* ViewController.swift */,
+				9122F1092747EAB700325880 /* SecondViewController.swift */,
+				9122F113274A111F00325880 /* ThirdViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9149C9662A22DA09005CF920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9122F0FB2747EA6600325880 /* Main.storyboard */,
+				9122F111274A110800325880 /* Sub.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +181,10 @@
 				9122F10A2747EAB700325880 /* SecondViewController.swift in Sources */,
 				9122F0FA2747EA6600325880 /* ViewController.swift in Sources */,
 				9122F0F62747EA6600325880 /* AppDelegate.swift in Sources */,
+				9149C9682A22DDFC005CF920 /* UIStoryboard+Ext.swift in Sources */,
 				9122F0F82747EA6600325880 /* SceneDelegate.swift in Sources */,
 				9122F114274A111F00325880 /* ThirdViewController.swift in Sources */,
-				9122F10C2749FD4300325880 /* ChangeScene.swift in Sources */,
+				9122F10C2749FD4300325880 /* TransScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

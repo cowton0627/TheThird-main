@@ -10,17 +10,16 @@ import UIKit
 class SecondViewController: UIViewController {
     
     required init?(coder: NSCoder) {
-        print("===> SecondViewController init")
+        print("===> SecondVC init")
         super.init(coder: coder)
     }
     
     deinit {
-        print("SecondViewController deinit <===")
+        print("SecondVC deinit <===")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
 
